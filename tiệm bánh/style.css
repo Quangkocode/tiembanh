@@ -1,0 +1,124 @@
+:root {
+  --primary: #ff6600;
+  --dark: #000;
+  --light: #fff;
+  --gray: #666;
+  --radius: 12px;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background: #f9f9fb;
+  margin: 0;
+  padding: 40px;
+  display: flex;
+  justify-content: center;
+}
+
+.container {
+  display: flex;
+  background: var(--light);
+  border-radius: var(--radius);
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  overflow: hidden;
+  max-width: 900px;
+  width: 100%;
+}
+
+/* LEFT */
+.left {
+  flex: 1;
+  padding: 30px;
+  background: #fffaf5;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.logo img {
+  width: 48px; height: 48px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.shop-name { font-weight: bold; font-size: 18px; }
+.shop-tagline { font-size: 13px; color: var(--gray); }
+
+.left h1 { font-size: 22px; margin: 10px 0; }
+.left p { font-size: 14px; color: var(--gray); }
+
+.products {
+  display: flex;
+  gap: 10px;
+  margin: 20px 0;
+}
+
+.product {
+  background: var(--light);
+  padding: 8px 12px;
+  border-radius: var(--radius);
+  border: 1px solid #eee;
+  font-size: 13px;
+}
+
+.note { font-size: 13px; color: var(--gray); }
+
+/* RIGHT */
+.right {
+  flex: 1;
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.tabs {
+  display: flex;
+  margin-bottom: 15px;
+}
+
+.tab {
+  flex: 1;
+  text-align: center;
+  padding: 10px;
+  cursor: pointer;
+  border-radius: var(--radius);
+  font-weight: bold;
+  border: 1px solid #ddd;
+}
+
+.tab.active {
+  background: var(--primary);
+  color: var(--light);
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+input {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: var(--radius);
+  font-size: 14px;
+}
+
+.btn {
+  padding: 10px;
+  border-radius: var(--radius);
+  cursor: pointer;
+  font-weight: bold;
+  border: none;
+}
+
+.btn.primary { background: var(--primary); color: var(--light); }
+
+.small { font-size: 12px; color: var(--gray); }
+.error { color: red; }
+.success { color: green; }
